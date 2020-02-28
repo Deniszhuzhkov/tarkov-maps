@@ -1,0 +1,55 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+.box {
+    display: flex;
+    width: max-content;
+    height: max-content;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.h {
+    border: 400px solid #e6e6d4;
+    width: max-content;
+    height: max-content;
+}
+.scale {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
+    &__button {
+        background-color: rgba(0, 0, 0, .3);
+        margin: 8px 0;
+        padding: 10px 14px;
+        border: 2px  solid black;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 20px;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .4);
+        }
+
+        &:active {
+            background-color: rgba(0, 0, 0, .2);
+        }
+    }
+}
+
+
+

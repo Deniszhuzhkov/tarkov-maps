@@ -1,0 +1,28 @@
+{
+  "name": "tarkov",
+  "version": "1.0.0",
+  "description": "Tarkov pelps",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deniszhuzhkov/tarkov-maps.git"
+  },
+  "author": "Zhuzhkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deniszhuzhkov/tarkov-maps/issues"
+  },
+  "homepage": "https://github.com/Deniszhuzhkov/tarkov-maps#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "0.4.0",
+    "gulp-sass": "4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-plumber": "1.2.1",
+    "path": "0.12.7",
+    "browser-sync": "2.26.7"
+  }
+}

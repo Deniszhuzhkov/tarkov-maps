@@ -22,13 +22,17 @@ scaleMax.onclick = function () {
 
     
 
-    scale = scale + .1 - 0;
+    scale = scale + .1;
     box.style.transform = 'scale('+ scale +')'
     
 }
 scaleMin.onclick = function () {
-    scale = scale - .1
-    box.style.transform = 'scale('+ scale +')'
+
+    if (scale > 0.4) {
+        scale = scale - .1
+        box.style.transform = 'scale('+ scale +')'
+    }
+    
 }
 function addOnWheel(elem, handler) {
     if (elem.addEventListener) {
@@ -48,10 +52,10 @@ function addOnWheel(elem, handler) {
   addOnWheel(box, function(e) {
 
     var delta = e.deltaY || e.detail || e.wheelDelta;
-
+    
     if (delta > 0) scale += 0.05;
-    else scale -= 0.05;
-
+    else if (scale > 0.4) scale -= 0.05;
+        
     box.style.transform = box.style.WebkitTransform = box.style.MsTransform = 'scale(' + scale + ')';
 
     e.preventDefault();

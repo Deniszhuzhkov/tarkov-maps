@@ -48,7 +48,19 @@ sassWatch = async function sassWatch() {
   });
 };
 
+jsRun = async function jsRun() {
+  return gulp.src('dev/**/*.js')
+      .pipe(gulp.dest('./public/'))
   
+};
+
+jsWatch  = async function jsWatch() {
+  let watcherJS = gulp.watch('dev/**/*.js');
+
+  watcherJS.on('change', function () {
+      jsRun()
+  });
+};
 
 const initBrowserSync = () => {
   browserSync.init({
@@ -71,12 +83,14 @@ const build = gulp.series(
   
     pugRun,
     sassRun,
+    jsRun
     
 )
 
 const watch = gulp.series(
   pugWatch,
   sassWatch,
+  jsWatch,
   serverui
 );
 

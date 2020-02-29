@@ -2,10 +2,24 @@ html, body {
     padding: 0;
     margin: 0;
 }
+
+body {
+    overflow: hidden;
+}
 .box {
+    &-wrapper {
+        position: absolute;
+        left: -1464px; 
+        top: -555px;
+        width: max-content;
+        height: max-content;
+    }
+
     display: flex;
     width: max-content;
     height: max-content;
+    
+    
 
     &__item {
         display: flex;

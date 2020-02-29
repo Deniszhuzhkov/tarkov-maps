@@ -3,8 +3,20 @@ html, body {
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 .box {
   display: flex;
+  width: max-content;
+  height: max-content;
+}
+
+.box-wrapper {
+  position: absolute;
+  left: -1464px;
+  top: -555px;
   width: max-content;
   height: max-content;
 }

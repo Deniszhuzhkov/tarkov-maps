@@ -7,6 +7,17 @@ body {
   overflow: hidden;
 }
 
+.marks {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid gold;
+}
+
 .box {
   display: flex;
   width: max-content;
@@ -21,9 +32,13 @@ body {
   height: max-content;
 }
 
-.box__item {
+.box__section {
   display: flex;
   flex-direction: column;
+}
+
+.box__item {
+  position: relative;
 }
 
 .h {
@@ -63,4 +78,48 @@ body {
 
 .scale__button:active {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sv-icon {
+  display: flex;
+  align-items: center;
+}
+
+.sv-icon .icon__pic {
+  fill: currentColor;
+}
+
+.sv-icon--size--8 .icon__pic {
+  width: 8px;
+  height: 8px;
+}
+
+.sv-icon--size--12 .icon__pic {
+  width: 12px;
+  height: 12px;
+}
+
+.sv-icon--size--16 .icon__pic {
+  width: 16px;
+  height: 16px;
+}
+
+.sv-icon--size--20 .icon__pic {
+  width: 20px;
+  height: 20px;
+}
+
+.sv-icon--size--24 .icon__pic {
+  width: 24px;
+  height: 24px;
+}
+
+.sv-icon--size--32 .icon__pic {
+  width: 32px;
+  height: 32px;
+}
+
+.sv-icon--size--48 .icon__pic {
+  width: 48px;
+  height: 48px;
 }

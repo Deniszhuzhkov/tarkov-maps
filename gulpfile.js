@@ -13,7 +13,7 @@ clear = async function clear()  {
 
 
 pugRun = async function pugRun() {
-    return gulp.src('dev/**/*.pug')
+    return gulp.src(['dev/**/*.pug','!dev/**/_mixins.pug'])
       .pipe(plumber())
       .pipe(pug({
         pretty: true,
@@ -25,7 +25,7 @@ pugRun = async function pugRun() {
 
 pugWatch = async function pugWatch() {
     let watcherPug = gulp.watch('dev/**/*.pug');
-  
+
     watcherPug.on('change', function () {
         pugRun()
     });
@@ -37,7 +37,7 @@ sassRun = async function sassRun() {
             outputStyle: 'expanded'
         }).on('error', sass.logError))
         .pipe(gulp.dest('./public/'))
-    
+
 };
 
 sassWatch = async function sassWatch() {
@@ -51,7 +51,7 @@ sassWatch = async function sassWatch() {
 jsRun = async function jsRun() {
   return gulp.src('dev/**/*.js')
       .pipe(gulp.dest('./public/'))
-  
+
 };
 
 jsWatch  = async function jsWatch() {
@@ -79,12 +79,12 @@ serverui = async function server()  {
 };
 
 const build = gulp.series(
-    
-  
+
+
     pugRun,
     sassRun,
     jsRun
-    
+
 )
 
 const watch = gulp.series(
@@ -98,7 +98,7 @@ const buildDev = gulp.series(
     build,
     watch
 );
-  
+
 // ======================
 gulp.task('start', buildDev);
 gulp.task('build', build);

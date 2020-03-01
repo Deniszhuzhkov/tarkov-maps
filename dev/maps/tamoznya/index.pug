@@ -3,12 +3,20 @@ html
         title tarkov Tamoznya
         link(rel="stylesheet", href="css/style.css")
     body
+        include _mixins/_mixins
+        div(id='aas')
+            +icon({
+                name: 'sv--16--tool-box',
+                size: '20'
+            })
         .scale
-            button.scale__button(id='scaleMax') + 
+            button.scale__button(id='scaleMax') +
             button.scale__button(id='scaleMin') -
         .box-wrapper
             .box
 
+
+        script(src="js/marks.js")
         script(src="js/script.js")
-    
-            
+
+

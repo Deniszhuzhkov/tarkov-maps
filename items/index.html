@@ -50,9 +50,48 @@
     color: #9a8866;
   }
 
+.label {
+  color: #ffffff;
+}
+
+  #fl1:checked ~ .list .img-item {
+    width: 100px;
+    height: 88px;
+  }
+  #fl1:checked ~ .list .img-item__img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #fl1:checked ~ .list .item__name {
+    display: none;
+  }
+
+  #fl1:checked ~ .list .list__section {
+    flex: 1 1 20%;
+  }
+
+  #fl2:checked ~ .list .list__section {
+    flex: 1 1 100% !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #fl2:checked ~ .list .list-title {
+    flex: 1 1 100%;
+  }
+  #fl2:checked ~ .list .item {
+    margin: 4px;
+  }
 </style>
 
 <!--.list__section>.list-title{title}+.item*5>.img-item>img.img-item__img[src="../images/"]^.item__name{name}+.item__count{000}-->
+
+<input id="fl1" type="checkbox">
+<label class="label" for="fl1">vis-1</label>
+<input id="fl2" type="checkbox">
+<label class="label" for="fl2">vis-2</label>
+
+
 <div class="list">
   <div class="list__section">
     <div class="list-title">Горюче-смазочные материалы</div>
@@ -633,207 +672,207 @@
   <div class="list__section">
     <div class="list-title">Электроника</div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Schetchik_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Счётчик Гейгера</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/GPhone_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Сломанный смартфон GPhone</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Kuller_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Процессорный кулер</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/CPU_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Центральный процессор</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/DVD_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">DVD привод</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Operativka_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Оперативная память</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/BlokPitaniya_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Блок питания</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Vidyaha_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Видеокарта</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Troynik_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Тройник</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Usb_adapter_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">USB Адаптер</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/HDD_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Поврежденный жесткий диск</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Magnit_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Магнит</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Plata_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Печатная плата</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Svecha_zajiganiya_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Свеча зажигания</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Lampa_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Энергосберегающая лампа</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/LampaUF_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Ультрафиолетовая лампа</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Gazan_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Газоанализатор</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Drel_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Электродрель</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Kabel_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Силовой кабель</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Golden1GPhone_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Золотой 1GPhone</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/COFDM_Icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный COFDM беспроводной передатчик сигналов</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/RFIDR_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Считыватель UHF RFID</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/VPXFlashIcon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Твердотельный накопитель VPX</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Virtex_programmable_processor_Icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Программируемый процессор Virtex</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Puchok_provodov_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Пучок проводов</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Kondensatori_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Конденсаторы</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Tetriz_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Электронная игра Тетриз</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Broken_GPhone_x_Icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Сломанный смартфон GPhone X</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Voenniy_kabel_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный кабель</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Voennaya_plata_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военная печатная плата</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/FAR_RLS_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Элемент фазированной решетки РЛС</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Voen_tepl_modul_iridium_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный тепловизионный модуль Иридиум</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Voenniy_gyrotahometr_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный гиротахометр</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Voenniy_filtr_pitaniya_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный фильтр питания</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Elektrodvigatel_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Электродвигатель</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/NIXXOR_lens_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Объектив NIXXOR</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Lcd_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Рабочий LCD дисплей</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Lcd_nerabochiy_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Сломанный LCD дисплей</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Rele_kontrolya_faz_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Реле контроля фаз</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Lampa_ilicha_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Лампа накаливания</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Spiral_nakalivaniya_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Спираль накаливания</div>
       <div class="item__count">000</div>
     </div>
@@ -841,45 +880,44 @@
   <div class="list__section">
     <div class="list-title">title</div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Batareyka_AA_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Батарейка типа АА</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Batareika_type_D_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Батарейка тип D</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/AvtoAkum_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Автомобильный Аккумулятор</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/AkumMobilniy_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Аккумуляторная батарея</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Poverbank_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Мобильный повербанк</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/VoenAkum_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный аккумулятор 6-СТЭН-140-М</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Item_barter_energy_greenbat_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Литиевая аккумуляторная батарейка GreenBat</div>
       <div class="item__count">000</div>
     </div>
     <div class="item">
-      <div class="img-item"><img src="../images/" alt="" class="img-item__img"></div>
+      <div class="img-item"><img src="../images/Item_barter_energy_cyclon_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Аккумуляторная батарея Циклон</div>
       <div class="item__count">000</div>
     </div>
-
   </div>
 </div>

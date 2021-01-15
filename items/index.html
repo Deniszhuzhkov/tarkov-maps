@@ -41,7 +41,7 @@
     padding: 12px;
   }
   .item {
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: center;
     border: 2px solid #e6e6d4;
@@ -92,6 +92,14 @@
   #fl2:checked ~ .list .item {
     margin: 4px;
   }
+
+  #fl3:checked ~ .list .item[class*='item t'] {
+    display: flex;
+  }
+
+  #fl4:checked ~ .list .item[class='item'] {
+    display: flex;
+  }
 </style>
 
 <!--.list__section>.list-title{title}+.item*5>.img-item>img.img-item__img[src="../images/"]^.item__name{name}+.item__count{000}-->
@@ -100,7 +108,11 @@
 <label class="label" for="fl1">vis-1</label>
 <input id="fl2" checked type="checkbox">
 <label class="label" for="fl2">vis-2</label>
-
+<span>|</span>
+<input id="fl3" checked type="checkbox">
+<label class="label" for="fl3">че брать</label>
+<input id="fl4" checked type="checkbox">
+<label class="label" for="fl4">че не брать</label>
 
 <div class="list">
   <div class="list__section">
@@ -130,20 +142,25 @@
       <div class="item__name">Сухое горючее</div>
       <div class="item__count">30 000</div>
     </div>
-    <div class="item t2">
+    <div class="item t">
       <div class="img-item"><img src="../images/WD-40_100ml_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">WD-40 100мл</div>
-      <div class="item__count">20 000</div>
+      <div class="item__count">12 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/WD-40_400ml_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">WD-40 400мл</div>
-      <div class="item__count">13 000</div>
+      <div class="item__count">17 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Propan_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">5-ти литровый баллон пропана</div>
       <div class="item__count">34 000</div>
+    </div>
+    <div class="item">
+      <div class="img-item"><img src="../images/Kanistra_metall_icon.png" alt="" class="img-item__img"></div>
+      <div class="item__name">Канистра металлическая топливная</div>
+      <div class="item__count">48 000</div>
     </div>
     <div class="item t">
       <div class="img-item"><img src="../images/ToplivnayaPrisadka_icon.png" alt="" class="img-item__img"></div>
@@ -153,22 +170,17 @@
     <div class="item t3">
       <div class="img-item"><img src="../images/Smazka_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Оружейная смазка #FireKlean</div>
-      <div class="item__count">110 000</div>
-    </div>
-    <div class="item">
-      <div class="img-item"><img src="../images/Kanistra_metall_icon.png" alt="" class="img-item__img"></div>
-      <div class="item__name">Канистра металлическая топливная</div>
-      <div class="item__count">50 000</div>
+      <div class="item__count">85 000</div>
     </div>
     <div class="item t">
       <div class="img-item"><img src="../images/Kanistra_exp_toplivnaya.png" alt="" class="img-item__img"></div>
       <div class="item__name">Канистра экспедиционная топливная</div>
       <div class="item__count">53 000</div>
     </div>
-    <div class="item t">
+    <div class="item">
       <div class="img-item"><img src="../images/Item_barter_flammable_huntermatches_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Охотничьи спички</div>
-      <div class="item__count">12 000</div>
+      <div class="item__count">9 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Poroh_icon.png" alt="" class="img-item__img"></div>
@@ -180,10 +192,10 @@
       <div class="item__name">Оружейный порох "Орел"</div>
       <div class="item__count">65 000</div>
     </div>
-    <div class="item t2">
+    <div class="item t3">
       <div class="img-item"><img src="../images/Poroh_yastreb_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Оружейный порох "Ястреб"</div>
-      <div class="item__count">55 000</div>
+      <div class="item__count">60 000 +</div>
     </div>
   </div>
   <div class="list__section">
@@ -191,17 +203,17 @@
     <div class="item">
       <div class="img-item"><img src="../images/Sigareti_Apollo_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Сигареты Союз Аполлон</div>
-      <div class="item__count">9 000</div>
+      <div class="item__count">6 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Sigareti_Malboro_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Сигареты Malboro</div>
-      <div class="item__count">7 000</div>
+      <div class="item__count">2 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Sigareti_Wilston_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Сигареты Wilston</div>
-      <div class="item__count">5 000</div>
+      <div class="item__count">4 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Sigareti_Strike_icon.png" alt="" class="img-item__img"></div>
@@ -226,22 +238,22 @@
     <div class="item t2">
       <div class="img-item"><img src="../images/Parakord_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Моток паракорда</div>
-      <div class="item__count">52 000</div>
+      <div class="item__count">42 000 -</div>
     </div>
     <div class="item t3">
       <div class="img-item"><img src="../images/Snaryad_ofz_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Снаряд ОФЗ 30х160мм</div>
-      <div class="item__count">82 000</div>
+      <div class="item__count">97 000</div>
     </div>
     <div class="item">
       <div class="img-item t"><img src="../images/Filtr_poglotitel_FP-100_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Фильтр поглотитель ФП-100</div>
-      <div class="item__count">135 000</div>
+      <div class="item__count">163 000</div>
     </div>
-    <div class="item t">
+    <div class="item t2">
       <div class="img-item"><img src="../images/Vodniy_filtr_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Водный фильтр</div>
-      <div class="item__count">33 000</div>
+      <div class="item__count">50 000 +</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Orujeynie_chasti_icon.png" alt="" class="img-item__img"></div>
@@ -251,22 +263,22 @@
     <div class="item t">
       <div class="img-item"><img src="../images/Item_barter_other_cloth_cordura_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Полиамидная ткань Кордура</div>
-      <div class="item__count">18 000</div>
+      <div class="item__count">20 000 +</div>
     </div>
-    <div class="item t">
+    <div class="item">
       <div class="img-item"><img src="../images/Item_barter_other_cloth_fleece_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Флисовая ткань</div>
-      <div class="item__count">18 000</div>
+      <div class="item__count">8 000 -</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Item_barter_other_cloth_ripstop_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Ткань рипстоп</div>
-      <div class="item__count">6 000</div>
+      <div class="item__count">7 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Item_barter_other_cloth_aramid_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Арамидная ткань</div>
-      <div class="item__count">5 000</div>
+      <div class="item__count">15 000 +</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Item_barter_other_uzrgm_fuse_ico.png" alt="" class="img-item__img"></div>
@@ -284,37 +296,37 @@
     <div class="item">
       <div class="img-item"><img src="../images/Ploskogubci_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Плоскогубцы</div>
-      <div class="item__count">5 000</div>
+      <div class="item__count">7 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Ruletka_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Строительная измерительная рулетка</div>
-      <div class="item__count">1 000</div>
+      <div class="item__count">2 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Otvertka_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Отвертка</div>
       <div class="item__count">4 000</div>
     </div>
-    <div class="item t2">
+    <div class="item t">
       <div class="img-item"><img src="../images/Ploskaya_otvertka_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Отвертка плоская</div>
-      <div class="item__count">20 000</div>
+      <div class="item__count">13 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Dlinnaya_otvertka_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Отвертка плоская длинная</div>
       <div class="item__count">6 000</div>
     </div>
-    <div class="item">
+    <div class="item t">
       <div class="img-item"><img src="../images/GaechniyKluch_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Гаечный ключ</div>
-      <div class="item__count">8 000</div>
+      <div class="item__count">11 000 +</div>
     </div>
     <div class="item t">
       <div class="img-item"><img src="../images/Elite_red_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Плоскогубцы Elite</div>
-      <div class="item__count">15 000</div>
+      <div class="item__count">17 000 +</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Kruglogubci_icon.png" alt="" class="img-item__img"></div>
@@ -334,7 +346,7 @@
     <div class="item t">
       <div class="img-item"><img src="../images/Nabor_instrumentov_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Набор инструментов</div>
-      <div class="item__count">48 000</div>
+      <div class="item__count">45 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Ruchnaia_drel_icon.png" alt="" class="img-item__img"></div>
@@ -344,25 +356,25 @@
   </div>
   <div class="list__section">
     <div class="list-title">Инфо предметы</div>
-    <div class="item">
+    <div class="item t">
       <div class="img-item"><img src="../images/Diary_Icon1.png" alt="" class="img-item__img"></div>
       <div class="item__name">Ежедневник</div>
-      <div class="item__count">17 000</div>
+      <div class="item__count">23 000 +</div>
     </div>
     <div class="item t3">
       <div class="img-item"><img src="../images/PapkaRazvedannie_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Папка с разведданными</div>
-      <div class="item__count">229 000</div>
+      <div class="item__count">235 000 +</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Lada_manual_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Техническая документация</div>
-      <div class="item__count">3 000</div>
+      <div class="item__count">5 000</div>
     </div>
     <div class="item t2">
       <div class="img-item"><img src="../images/Tonkiy_ejednevnik.png" alt="" class="img-item__img"></div>
       <div class="item__name">Тонкий ежедневник</div>
-      <div class="item__count">28 000</div>
+      <div class="item__count">30 000</div>
     </div>
     <div class="item t3">
       <div class="img-item"><img src="../images/Sas_icon.png" alt="" class="img-item__img"></div>
@@ -372,30 +384,30 @@
     <div class="item t3">
       <div class="img-item"><img src="../images/Fleshka_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Защищенный флеш-накопитель</div>
-      <div class="item__count">31 000</div>
+      <div class="item__count">33 000</div>
     </div>
     <div class="item t3">
       <div class="img-item"><img src="../images/Ssd_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">SSD диск</div>
-      <div class="item__count">31 000</div>
+      <div class="item__count">34 000</div>
     </div>
   </div>
   <div class="list__section">
     <div class="list-title">Медматериалы</div>
-    <div class="item t">
+    <div class="item t2">
       <div class="img-item"><img src="../images/Shpriz_v_upakovke_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Шприц в упаковке</div>
-      <div class="item__count">12 000</div>
+      <div class="item__count">23 000+</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Nabor_medikamentov_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Набор медикаментов</div>
       <div class="item__count">7 000</div>
     </div>
-    <div class="item t3">
+    <div class="item t">
       <div class="img-item"><img src="../images/Pereliv_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Набор для переливания крови</div>
-      <div class="item__count">33 000</div>
+      <div class="item__count">18 000 </div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/PerkisVodoroda_icon.png" alt="" class="img-item__img"></div>
@@ -410,12 +422,12 @@
     <div class="item t3">
       <div class="img-item"><img src="../images/Oftalmoskop_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Офтальмоскоп</div>
-      <div class="item__count">95 000</div>
+      <div class="item__count">80 000</div>
     </div>
     <div class="item t3">
       <div class="img-item"><img src="../images/Defibrilyator_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Портативный дефибрилятор</div>
-      <div class="item__count">134 000</div>
+      <div class="item__count">154 000+</div>
     </div>
     <div class="item t3">
       <div class="img-item"><img src="../images/LEDX_icon.png" alt="" class="img-item__img"></div>
@@ -425,25 +437,25 @@
   </div>
   <div class="list__section">
     <div class="list-title">Стройматериалы</div>
-    <div class="item t1">
+    <div class="item t">
       <div class="img-item"><img src="../images/Izolenta_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Изолента</div>
       <div class="item__count">17 000</div>
     </div>
-    <div class="item">
+    <div class="item t">
       <div class="img-item"><img src="../images/Skotch_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Монтажный скотч</div>
-      <div class="item__count">8 000</div>
+      <div class="item__count">14 000</div>
     </div>
     <div class="item t3">
       <div class="img-item"><img src="../images/Bolty_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Болты</div>
-      <div class="item__count">47 000</div>
+      <div class="item__count">65 000</div>
     </div>
-    <div class="item t2">
+    <div class="item t">
       <div class="img-item"><img src="../images/Gayki_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Гайки</div>
-      <div class="item__count">20 000</div>
+      <div class="item__count">16 000</div>
     </div>
     <div class="item t3">
       <div class="img-item"><img src="../images/Gvozdi_icon.png" alt="" class="img-item__img"></div>
@@ -453,22 +465,22 @@
     <div class="item">
       <div class="img-item"><img src="../images/Montajnaya_pena_Xeno_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Монтажная пена Xenomorph</div>
-      <div class="item__count">14 000</div>
-    </div>
-    <div class="item">
-      <div class="img-item"><img src="../images/Montajnaya_pena_shus_icon.png" alt="" class="img-item__img"></div>
-      <div class="item__name">Монтажная пена Shustrilo</div>
       <div class="item__count">23 000</div>
     </div>
-    <div class="item t3">
+    <div class="item t2">
+      <div class="img-item"><img src="../images/Montajnaya_pena_shus_icon.png" alt="" class="img-item__img"></div>
+      <div class="item__name">Монтажная пена Shustrilo</div>
+      <div class="item__count">70 000</div>
+    </div>
+    <div class="item t2">
       <div class="img-item"><img src="../images/Shlang_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Гофрированный шланг</div>
-      <div class="item__count">65 000</div>
+      <div class="item__count">50 000 -</div>
     </div>
-    <div class="item t">
+    <div class="item">
       <div class="img-item"><img src="../images/Samorezi_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Пакет саморезов</div>
-      <div class="item__count">10 000</div>
+      <div class="item__count">7 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Kusok_orgstekla_icon.png" alt="" class="img-item__img"></div>
@@ -478,17 +490,17 @@
     <div class="item t2">
       <div class="img-item"><img src="../images/Datchik_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Датчик давления</div>
-      <div class="item__count">54 000</div>
+      <div class="item__count">48 000 -</div>
     </div>
     <div class="item t">
       <div class="img-item"><img src="../images/Anal_Thermometer_Icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Аналоговый термометр</div>
-      <div class="item__count">22 000</div>
+      <div class="item__count">27 000 +</div>
     </div>
     <div class="item t">
       <div class="img-item"><img src="../images/Silikonovaya_trubka_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Силиконовая трубка</div>
-      <div class="item__count">14 000</div>
+      <div class="item__count">11 000 -</div>
     </div>
     <div class="item t">
       <div class="img-item"><img src="../images/Item_barter_building_poxeram_ico.png" alt="" class="img-item__img"></div>
@@ -498,7 +510,7 @@
     <div class="item t3">
       <div class="img-item"><img src="../images/Item_barter_building_kektape_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Липкая лента KEKТЕЙП</div>
-      <div class="item__count">40 000</div>
+      <div class="item__count">57 000 +</div>
     </div>
   </div>
   <div class="list__section">
@@ -511,7 +523,7 @@
     <div class="item">
       <div class="img-item"><img src="../images/OfisnayaBumaga_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Бумага для принтера</div>
-      <div class="item__count">14 000</div>
+      <div class="item__count">10 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Otbelivatel_icon.png" alt="" class="img-item__img"></div>
@@ -526,12 +538,12 @@
     <div class="item">
       <div class="img-item"><img src="../images/Paid_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Paid Antiroach</div>
-      <div class="item__count">9 000</div>
+      <div class="item__count">15 000</div>
     </div>
-    <div class="item t2">
+    <div class="item t3">
       <div class="img-item"><img src="../images/Soda_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Пачка соды</div>
-      <div class="item__count">23 000</div>
+      <div class="item__count">33 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Sheloch_icon.png" alt="" class="img-item__img"></div>
@@ -546,7 +558,7 @@
     <div class="item t">
       <div class="img-item"><img src="../images/Milo_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Кусок мыла</div>
-      <div class="item__count">14 000</div>
+      <div class="item__count">11 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/TualetBumaga_icon.png" alt="" class="img-item__img"></div>
@@ -556,7 +568,7 @@
     <div class="item">
       <div class="img-item"><img src="../images/Shaman_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Бутылка шампуня Schaman</div>
-      <div class="item__count">16 000</div>
+      <div class="item__count">11 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Ortodonto_icon.png" alt="" class="img-item__img"></div>
@@ -568,15 +580,15 @@
       <div class="item__name">Флакон репеллента</div>
       <div class="item__count">7 000</div>
     </div>
-    <div class="item">
+    <div class="item t2">
       <div class="img-item"><img src="../images/Item_barter_household_pipecleaner_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Средство для прочистки труб Копченый Дымоход</div>
-      <div class="item__count">5 000</div>
+      <div class="item__count">22 000 +</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Item_barter_household_chlorine_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Пакет с хлоркой</div>
-      <div class="item__count">5 000</div>
+      <div class="item__count">7 000</div>
     </div>
   </div>
   <div class="list__section">
@@ -584,7 +596,7 @@
     <div class="item">
       <div class="img-item"><img src="../images/Serebryanaya_cepochka_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Ювелирная цепочка</div>
-      <div class="item__count">6 000</div>
+      <div class="item__count">12 000</div>
     </div>
     <div class="item t2">
       <div class="img-item"><img src="../images/Zolotaya_cepochka_icon.png" alt="" class="img-item__img"></div>
@@ -609,7 +621,7 @@
     <div class="item t3">
       <div class="img-item"><img src="../images/Lev_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Бронзовый лев</div>
-      <div class="item__count">200 000</div>
+      <div class="item__count">372 000 +150k</div>
     </div>
     <div class="item t2">
       <div class="img-item"><img src="../images/Kresalo_icon.png" alt="" class="img-item__img"></div>
@@ -629,7 +641,7 @@
     <div class="item t3">
       <div class="img-item"><img src="../images/Rolleri_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Золотые часы Roler Submariner</div>
-      <div class="item__count">280 000</div>
+      <div class="item__count">320 000 +</div>
     </div>
     <div class="item t">
       <div class="img-item"><img src="../images/KnigaDobby_icon.png" alt="" class="img-item__img"></div>
@@ -639,7 +651,7 @@
     <div class="item">
       <div class="img-item"><img src="../images/Bitcoin_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Монета биткоина</div>
-      <div class="item__count">ХУЙ</div>
+      <div class="item__count"> <b>ХУЙ</b></div>
     </div>
     <div class="item t">
       <div class="img-item"><img src="../images/Petuh_icon.png" alt="" class="img-item__img"></div>
@@ -659,7 +671,7 @@
     <div class="item t3">
       <div class="img-item"><img src="../images/Kolco_s_cherepom_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Золотое кольцо с черепом</div>
-      <div class="item__count">53 000</div>
+      <div class="item__count">70 000 +</div>
     </div>
     <div class="item t2">
       <div class="img-item"><img src="../images/Gp_coin_icon.png" alt="" class="img-item__img"></div>
@@ -689,10 +701,10 @@
       <div class="item__name">Сломанный смартфон GPhone</div>
       <div class="item__count">11 000</div>
     </div>
-    <div class="item t3">
+    <div class="item t2">
       <div class="img-item"><img src="../images/Kuller_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Процессорный кулер</div>
-      <div class="item__count">32 000</div>
+      <div class="item__count">25 000</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/CPU_icon.png" alt="" class="img-item__img"></div>
@@ -712,12 +724,12 @@
     <div class="item t3">
       <div class="img-item"><img src="../images/BlokPitaniya_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Блок питания</div>
-      <div class="item__count">128 000</div>
+      <div class="item__count">138 000+</div>
     </div>
     <div class="item t3">
       <div class="img-item"><img src="../images/Vidyaha_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Видеокарта</div>
-      <div class="item__count">680 000</div>
+      <div class="item__count">740 000+</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Troynik_icon.png" alt="" class="img-item__img"></div>
@@ -732,12 +744,12 @@
     <div class="item">
       <div class="img-item"><img src="../images/HDD_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Поврежденный жесткий диск</div>
-      <div class="item__count">10 000</div>
+      <div class="item__count">8 000</div>
     </div>
-    <div class="item t">
+    <div class="item 3">
       <div class="img-item"><img src="../images/Magnit_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Магнит</div>
-      <div class="item__count">18 000</div>
+      <div class="item__count">40 000</div>
     </div>
     <div class="item t2">
       <div class="img-item"><img src="../images/Plata_icon.png" alt="" class="img-item__img"></div>
@@ -749,15 +761,15 @@
       <div class="item__name">Свеча зажигания</div>
       <div class="item__count">10 000</div>
     </div>
-    <div class="item t">
+    <div class="item">
       <div class="img-item"><img src="../images/Lampa_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Энергосберегающая лампа</div>
-      <div class="item__count">10 000</div>
+      <div class="item__count">7 000 -</div>
     </div>
-    <div class="item t">
+    <div class="item">
       <div class="img-item"><img src="../images/LampaUF_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Ультрафиолетовая лампа</div>
-      <div class="item__count">10 000</div>
+      <div class="item__count">8 000 -</div>
     </div>
     <div class="item t">
       <div class="img-item"><img src="../images/Gazan_icon.png" alt="" class="img-item__img"></div>
@@ -767,39 +779,39 @@
     <div class="item">
       <div class="img-item"><img src="../images/Drel_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Электродрель</div>
-      <div class="item__count">22 000</div>
+      <div class="item__count">16 000</div>
     </div>
-    <div class="item t">
+    <div class="item t2">
       <div class="img-item"><img src="../images/Kabel_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Силовой кабель</div>
-      <div class="item__count">20 000</div>
+      <div class="item__count">30 000 +</div>
     </div>
-    <div class="item">
+    <div class="item t2">
       <div class="img-item"><img src="../images/Golden1GPhone_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Золотой 1GPhone</div>
       <div class="item__count">26 000</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/COFDM_Icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный COFDM беспроводной передатчик сигналов</div>
       <div class="item__count">110 000</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/RFIDR_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Считыватель UHF RFID</div>
       <div class="item__count">30 000</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/VPXFlashIcon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Твердотельный накопитель VPX</div>
-      <div class="item__count">220 000</div>
+      <div class="item__count">260 000 +</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Virtex_programmable_processor_Icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Программируемый процессор Virtex</div>
       <div class="item__count">628 000</div>
     </div>
-    <div class="item">
+    <div class="item t">
       <div class="img-item"><img src="../images/Puchok_provodov_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Пучок проводов</div>
       <div class="item__count">11 000</div>
@@ -807,82 +819,82 @@
     <div class="item">
       <div class="img-item"><img src="../images/Kondensatori_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Конденсаторы</div>
-      <div class="item__count">10 000</div>
+      <div class="item__count">8 000</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/Tetriz_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Электронная игра Тетриз</div>
-      <div class="item__count">578 000</div>
+      <div class="item__count">539 000 -</div>
     </div>
-    <div class="item">
+    <div class="item t2">
       <div class="img-item"><img src="../images/Broken_GPhone_x_Icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Сломанный смартфон GPhone X</div>
       <div class="item__count">19 000</div>
     </div>
-    <div class="item">
+    <div class="item t2">
       <div class="img-item"><img src="../images/Voenniy_kabel_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный кабель</div>
-      <div class="item__count">28 000</div>
+      <div class="item__count">42 000 +</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/Voennaya_plata_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военная печатная плата</div>
-      <div class="item__count">220 000</div>
+      <div class="item__count">200 000 -</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/FAR_RLS_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Элемент фазированной решетки РЛС</div>
-      <div class="item__count">900 000</div>
+      <div class="item__count">1 200 000 ++</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/Voen_tepl_modul_iridium_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный тепловизионный модуль Иридиум</div>
       <div class="item__count">48 000</div>
     </div>
-    <div class="item">
+    <div class="item t">
       <div class="img-item"><img src="../images/Voenniy_gyrotahometr_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный гиротахометр</div>
       <div class="item__count">37 000</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/Voenniy_filtr_pitaniya_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный фильтр питания</div>
-      <div class="item__count">49 000</div>
+      <div class="item__count">120 000 +x2</div>
     </div>
     <div class="item">
       <div class="img-item"><img src="../images/Elektrodvigatel_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Электродвигатель</div>
-      <div class="item__count">40 000</div>
+      <div class="item__count">30 000 -</div>
     </div>
-    <div class="item">
+    <div class="item t2">
       <div class="img-item"><img src="../images/NIXXOR_lens_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Объектив NIXXOR</div>
-      <div class="item__count">40 000</div>
+      <div class="item__count">23 000 -</div>
     </div>
-    <div class="item">
+    <div class="item t">
       <div class="img-item"><img src="../images/Lcd_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Рабочий LCD дисплей</div>
       <div class="item__count">22 000</div>
     </div>
-    <div class="item">
+    <div class="item ">
       <div class="img-item"><img src="../images/Lcd_nerabochiy_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Сломанный LCD дисплей</div>
       <div class="item__count">8 000</div>
     </div>
-    <div class="item">
+    <div class="item t">
       <div class="img-item"><img src="../images/Rele_kontrolya_faz_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Реле контроля фаз</div>
-      <div class="item__count">15 000</div>
+      <div class="item__count">10 000 -</div>
     </div>
-    <div class="item">
+    <div class="item t2">
       <div class="img-item"><img src="../images/Lampa_ilicha_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Лампа накаливания</div>
-      <div class="item__count">14 000</div>
+      <div class="item__count">20 000</div>
     </div>
-    <div class="item">
+    <div class="item t">
       <div class="img-item"><img src="../images/Spiral_nakalivaniya_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Спираль накаливания</div>
-      <div class="item__count">15 000</div>
+      <div class="item__count">10 000</div>
     </div>
   </div>
   <div class="list__section">
@@ -897,32 +909,32 @@
       <div class="item__name">Батарейка тип D</div>
       <div class="item__count">5 000</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/AvtoAkum_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Автомобильный Аккумулятор</div>
-      <div class="item__count">239 000</div>
+      <div class="item__count">149 000 -100k</div>
     </div>
-    <div class="item">
+    <div class="item t">
       <div class="img-item"><img src="../images/AkumMobilniy_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Аккумуляторная батарея</div>
-      <div class="item__count">14 000</div>
+      <div class="item__count">10 000</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/Poverbank_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Мобильный повербанк</div>
-      <div class="item__count">34 000</div>
+      <div class="item__count">41 000</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/VoenAkum_icon.png" alt="" class="img-item__img"></div>
       <div class="item__name">Военный аккумулятор 6-СТЭН-140-М</div>
-      <div class="item__count">1 350 000</div>
+      <div class="item__count">950 000 -400k</div>
     </div>
-    <div class="item">
+    <div class="item t">
       <div class="img-item"><img src="../images/Item_barter_energy_greenbat_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Литиевая аккумуляторная батарейка GreenBat</div>
       <div class="item__count">15 000</div>
     </div>
-    <div class="item">
+    <div class="item t3">
       <div class="img-item"><img src="../images/Item_barter_energy_cyclon_ico.png" alt="" class="img-item__img"></div>
       <div class="item__name">Аккумуляторная батарея Циклон</div>
       <div class="item__count">51 000</div>
